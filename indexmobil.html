@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realmi phone</title>
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    
+  <header class="head">
+      <div class="container">
+          <div class="logo">
+                   <img style="height:50px;width:130px;" src="jpg/logo.png" alt="logo">
+          </div>
+          <div class="navber">
+            <div class="hh">
+                <span><a href="#">home</a></span>
+                <span><a href="#">phone</a></span>
+                <span><a href="#">accessorise</a></span>
+                <span><a href="#">cort</a></span>
+            </div>
+
+          </div>
+      </div>
+
+  </header>
+  <main class="info">
+      <div class="overlay"> </div>
+      <img src="jpg/mobile.png" alt=""class="mobile">
+
+    <div class="circle">
+        <div class="feature one">
+            <img src="jpg/battery.png" alt="">
+            <div>
+                <h1>battery</h1>
+                <p>5000mha,720Hrs standby</p>
+            </div>
+        </div>
+        <div class="feature two">
+            <img src="jpg/processor.png" alt="">
+            <div>
+                <h1>processor</h1>
+                <p>sanpdrogan octa core (11nm)</p>
+            </div>
+
+        </div>
+        <div class="feature three">
+            <img src="jpg/display.png" alt="">
+            <div>
+                <h1>dispaly</h1>
+                <p>6.6" mini-drop fullscreen</p>
+            </div>
+
+        </div>
+        <div class="feature four">
+            <img src="jpg/camera.png" alt="">
+            <div>
+                <h1>camera</h1>
+                <p>12mp,wide angle lens</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="contorls">
+        <img src="jpg/arrow.png" alt="" id="upbtn">
+        <h3>feature</h3>
+        <img src="jpg/arrow.png" alt=""id="downbtn">
+
+    </div>
+
+  </main>
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var upbtn=document.querySelector("#upbtn");
+    var circle=document.querySelector(".circle");
+    var downbtn=document.querySelector("#downbtn");
+    var roteate=circle.style.transform;
+    var retatesum;
+
+    upbtn.addEventListener("click",function(e){
+        e.preventDefault();
+        retatesum=roteate+"rotate(-90deg)";
+        circle.style.transform=retatesum;
+        roteate=retatesum;
+    });
+
+    downbtn.addEventListener("click",function(e){
+        e.preventDefault();
+        retatesum=roteate+"rotate(90deg)";
+        circle.style.transform=retatesum;
+        roteate=retatesum;
+    });
+</script>
+    
+</body>
+</html>
